@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<name>H3Grid.kml</name>
+	<NetworkLink>
+		<name>H3 Polygon Generator</name>
+		<description>Uber H3 hex grid to polygon generator</description>
+		<Link>
+			<href>https://h3grid.vercel.app/api?</href>
+			<viewRefreshMode>onStop</viewRefreshMode>
+			<viewRefreshTime>0.1</viewRefreshTime>
+			<!--    AA = Altitude Adjustment - bring hexes closer/further away from camera 
+					LWS = Line Width Small Hexes float https://developers.google.com/kml/documentation/kmlreference#linestyle
+					LWL = Line Width Large Hexes  float
+					PCS = Polygon Color Small Hexes hex str. https://simplekml.readthedocs.io/en/latest/constants.html#color
+					PCL = Polygon Color Large Hexes hex str
+					POS = Polygon Opacity Small int
+					POL = Polygon Opacity Large int           -->
+			<viewFormat>BBOX=[bboxWest],[bboxSouth],[bboxEast],[bboxNorth];CAMERA=[cameraAlt];AA=0;LWS=1;LWL=2;PCS=ff008000;PCL=ff0000ff;POS=0;POL=0</viewFormat>
+		</Link>
+	</NetworkLink>
+</kml>
