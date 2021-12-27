@@ -42,10 +42,10 @@ def geth3polys(lat,lng,alt,lws=1.0,lwl=2.0,pcs='ff008000',pcl='ff0000ff',pos=2,p
     osd.name='Resolution'
     osd.overlayxy = simplekml.OverlayXY(x=0,y=1,xunits=simplekml.Units.fraction,
                                        yunits=simplekml.Units.fraction)
-    osd.screenxy = simplekml.ScreenXY(x=15,y=15,xunits=simplekml.Units.pixels,
+    osd.screenxy = simplekml.ScreenXY(x=15,y=50,xunits=simplekml.Units.pixels,
                                      yunits=simplekml.Units.insetpixels)
     # cannot figure out how to just put text so this is silly but generate image from text
-    osd.icon.href='http://chart.apis.google.com/chart?chst=d_text_outline&chld=FFBBBB|16|h|BB0000|b|'+'R'+str(res)+' '+'R'+str(res+1)
+    osd.icon.href='http://chart.apis.google.com/chart?chst=d_text_outline&chld=FFBBBB|24|h|BB0000|b|'+'R'+str(res)+' '+'R'+str(res+1)
         
     return kml.kml()
 

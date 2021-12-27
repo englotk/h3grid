@@ -5,6 +5,7 @@
 		<name>H3 Polygon Generator</name>
 		<description>Uber H3 hex grid to polygon generator</description>
 		<Link>
+			<!-- <href>http://localhost:3000/api?</href> -->
 			<href>https://h3grid.vercel.app/api?</href>
 			<viewRefreshMode>onStop</viewRefreshMode>
 			<viewRefreshTime>0.1</viewRefreshTime>
